@@ -4,10 +4,17 @@
 /* ==========================================================================
 Typography
 ========================================================================== */
+
+html{
+  font-family: 'Montserrat', sans-serif !important;
+}
+body{
+  font-family: 'Montserrat', sans-serif !important;
+}
 p {
   font-size: 15px;
   line-height: 29px;
-  color: rgba(28, 54, 83, 0.6);
+  color: #0F0068;
   padding-bottom: 20px; }
 
 h1 {
@@ -16,19 +23,19 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 300;
-  color: #3D4351; }
+  color: #0F0068; }
 
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #3D4351; }
+  color: #0F0068; }
 
 h4 {
   font-size: 18px; }
 
 h5 {
   font-size: 15px;
-  color: #3D4351;
+  color: #0F0068;
   text-transform: uppercase;
   font-weight: 500; }
 
@@ -40,9 +47,9 @@ h5 {
   text-transform: uppercase; }
 
 .btn:hover, .btn:focus {
-  color: #fff;
-  border-color: #FF5274;
-  background-color: #FF5274; }
+  color: #0F0068;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255); }
 
 .btn-white {
   font-size: 13px;
@@ -52,21 +59,21 @@ h5 {
   border-color: #fff; }
 
 .btn-white:hover, .btn-white:focus {
-  color: #FF5274;
-  border-color: #FF5274; }
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255); }
 
 .btn-fill {
-  color: #fff;
-  border: solid 2px #FF5274;
+  color: #0F0068;
+  border: solid 2px rgb(255, 255, 255);
   border-radius: 40px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #FF5274; }
+  background-color: rgb(255, 255, 255); }
 
 .btn-fill:hover, .btn-fill:focus {
-  color: #fff;
-  background-color: #D7405D;
-  border-color: #D7405D; }
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgb(255, 255, 255); }
 
 .btn-small {
   padding: 8px 40px; }
@@ -100,7 +107,7 @@ Global Styles
   margin: 0; }
 
 a {
-  color: #FF5274;
+  color: rgb(255, 255, 255);
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -109,13 +116,13 @@ a {
   transition-property: color, border-color, background-color; }
 
 a:hover, a:focus {
-  color: #D7405D;
+  color: rgb(255, 255, 255);
   text-decoration: none; }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: rgba(28, 54, 83, 0.6);
+  color: #0F0068;
   -webkit-text-size-adjust: 100%; }
 
 ul, ol {
@@ -367,7 +374,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url("../img/hero.jpg") center center;
+  background: url("../img/hero-min.png") center center;
   background-size: cover;
   position: relative; }
   .hero .down-arrow a {
@@ -392,7 +399,7 @@ Hero
 
 .fixed {
   position: fixed;
-  background-color: #232731;
+  background-color: #0F0068;
   z-index: 999;
   width: 100%; }
 
@@ -421,7 +428,9 @@ header {
         color: #fff;
         padding-right: 25px; }
         header ul.primary-nav li a:hover {
-          color: #FF5274; }
+          color: rgb(255, 255, 255);
+          border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+        }
       header ul.primary-nav li:last-child a {
         padding-right: 0px; }
   header ul.member-actions li {
@@ -429,7 +438,9 @@ header {
     header ul.member-actions li a {
       color: #fff; }
       header ul.member-actions li a:hover {
-        color: #FF5274; }
+        color: #0F0068; 
+        background-color: #fff;
+      }
   header .header-nav {
     display: inline-block; }
   header .member-actions {
@@ -454,7 +465,7 @@ Intro
 ========================================================================== */
 .intro span.icon {
   font-size: 40px;
-  color: #FF5274;
+  color: #0F0068;
   font-weight: bold; }
 
 .intro-icon {
@@ -480,7 +491,7 @@ Features-stack
     margin: 0 0 20px 0; }
   .features span.icon {
     font-size: 35px;
-    color: #FF5274;
+    color: #0F0068;
     font-weight: bold; }
   .features .feature-icon {
     display: inline-block;
@@ -520,9 +531,9 @@ Features-stack
     background: url("../img/ipad-device2.png") no-repeat center center;
     z-index: 1; }
     .ipad-wrap3 {
-      width: 706px;
-      height: 1002px;
-      background: url("../img/ipad-device-site.png") no-repeat center center;
+      width: 922px;
+      height: 1502px;
+      background: url("../img/pc-popup.png") no-repeat center center;
       z-index: 1; }
     .ipad-wrap2 {
       width: 715px;
@@ -613,6 +624,10 @@ Features-stack
     position: absolute;
     bottom: -365px;
     right: 61%; }
+      .features .device-showcase2 {
+    position: absolute;
+    bottom: -265px;
+    right: 45%; }
 
 .features .responsive-feature-img, .features-extra .responsive-feature-img {
   display: none; }
@@ -710,7 +725,7 @@ Features-stack
   position: absolute;
   width: 916px;
   height: 540px;
-  background: url("../img/macbook-pro.png") no-repeat center center;
+  background: url("../img/slides.png") no-repeat center center;
   top: 114px;
   z-index: 4;
   left: 50%; }
@@ -769,7 +784,7 @@ Features-stack
 
 .hero-strip {
   margin-top: 120px;
-  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+  background: #0F0068 url("../img/polygonal-bg.png") no-repeat center center;
   padding-bottom: 190px;
   position: relative; }
 .hero-strip i {
@@ -800,7 +815,7 @@ Features-stack
           
 .hero-strip2 {
   margin-top: 50px;
-  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+  background: #0F0068 url("../img/polygonal-bg.png") no-repeat center center;
   padding-bottom: 100px;
   position: relative; }
 .hero-strip2 i {
@@ -830,7 +845,7 @@ Features-stack
 
 .hero-strip3 {
   margin-top: 0px;
-  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+  background: #0F0068 url("../img/polygonal-bg.png") no-repeat center center;
   padding-bottom: 100px;
   position: relative; }
 .hero-strip3 i {
@@ -923,9 +938,9 @@ Features-stack
     margin-left: 5px;
     font-size: 15px; }
   .blog figcaption a.blog-post-title {
-    color: rgba(28, 54, 83, 0.6); }
+    color: #0F0068; }
   .blog figcaption a.blog-post-title:hover, .blog figcaption a.blog-post-title:focus {
-    color: #3D4351; }
+    color: #0F0068; }
 
 /* ==========================================================================
 .testimonial-slider
@@ -973,7 +988,7 @@ Sign up form
   text-align: left;
   position: relative; }
   .sign-up .signup-form .form-input-group i {
-    color: #FF5274;
+    color: #0F0068;
     font-size: 14px; }
   .sign-up .signup-form .form-input-group i:after {
     content: "";
@@ -1022,7 +1037,7 @@ To top
 ========================================================================== */
 .to-top {
   height: 60px;
-  background-color: #495061; }
+  background-color: rgb(49, 38, 116); }
   .to-top .to-top-wrap {
     height: 60px;
     width: 70px;
@@ -1047,7 +1062,7 @@ To top
 Footer
 ========================================================================== */
 footer {
-  background-color: #3D4351;
+  background-color: #0F0068;
   position: relative; }
   footer p {
     color: #ACB1B4;
@@ -1077,7 +1092,7 @@ footer {
     margin: 0 2px; }
   footer .social-share {
     position: absolute;
-    background-color: #373D4A;
+    background-color: #0F0068;
     right: 0;
     width: 40%;
     height: 100%;
@@ -1089,7 +1104,7 @@ footer {
     footer .social-share a.twitter-share {
       height: 60px;
       width: 60px;
-      background-color: #1AB4EF;
+      background-color: rgb(239, 26, 221);
       border-radius: 3px;
       font-size: 22px;
       display: inline-block;
@@ -1457,4 +1472,37 @@ you can use the generic selector below, but it's slower:
   content: "\e063"; }
 @media screen and (min-width: 0px) and (max-width: 720px) {
 .mobile-hide{ display: none; }
+.margin {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+}
+
+.full-width-section {
+  width: 100%;
+  height: 650px;
+  padding: 120px;
+  margin: auto;
+  background-color: rgb(45, 20, 189);
+}
+.img-modelo{
+  bottom: 0;
+}
+
+.font-bold{
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-azul{
+  background-color: #0F0068 !important;
+  color: #fff;
+  padding: 15px;
+  transition: ease, 0.5s;
+}
+.btn-azul:hover{
+  background-color: rgba(16, 0, 104, 0) !important;
+  color: #0F0068;
+  border: solid, 2px;
+  border-color:  #0F0068;
 }
